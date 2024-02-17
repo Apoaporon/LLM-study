@@ -22,9 +22,23 @@
 ### ざっくりイメージ（引用）
 <img src="image.png" width=50%>
 
-# RAG(Retrieval-Augmented Generation)
-外部の知識ベースから事実を検索して、最新の正確な情報に基づいて大規模言語モデル（LLM）に回答を生成させることで、ユーザーの洞察をLLMの生成プロセスに組み込むというAIフレームワークです
-### ざっくりイメージ([引用](https://note.com/mizupe/n/nd5687d5a785b))
-<img src="image-1.png" width=50%>
+### 今後の動向
+Function calling　→ toolsの利用を推奨されている
+toolsはfunction callingの上位互換？
 
+function callingは1レスポンス1機能（1関数）
+toolsは、1レスポンスで複数の関数を利用できるらしい
+
+
+# RAG(Retrieval-Augmented Generation)
+RAG（Retrieval-Augmented Generation）システムは、LLM（Large Language Model）と呼ばれる大規模言語モデルと、Retrieval（文書検索モデル）を組み合わせた、質問応答（QA）を行うための自然言語処理（NLP）システムの一種です。その主な機能は、大量の情報源から必要な情報を取り出し、その情報に基づいて回答を生成することです。
+RAGはファインチューニングとは異なり、 LLMのパラメータを調整するわけではなく、 LLMの入力するデータの内容を調整する手法で、プロンプトエンジニアリングに含まれるもの
+
+
+### ざっくりイメージ([引用](https://storialaw.jp/blog/9916))
+<img src="image-2.png" width=50%>
+
+- メリット
+    -  LLMが処理できるデータは訓練データの中だけですが、RAGを用いることでリアルタイムで外部の情報源にアクセスし、より正確で豊富な回答を生成することが可能になる。
+    - 
 # LangChain
