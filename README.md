@@ -22,12 +22,14 @@
 ### ざっくりイメージ（引用）
 <img src="image.png" width=50%>
 
-### 今後の動向
-Function calling　→ toolsの利用を推奨されている
-toolsはfunction callingの上位互換？
+## function callingの種類
+### 旧式のfunction calling
+1つのリクエストに対して、一つの関数を利用するかしないかを判定して、function callingを行う
+### multi function calling (並列実行)
+1つのリクエストに対して、複数の関数を選択、実行してレスポンスを生成してくれる　← こちらが主流になりつつある。
 
-function callingは1レスポンス1機能（1関数）
-toolsは、1レスポンスで複数の関数を利用できるらしい
+toolsという引数が増え、今後のアップデートも期待できそう（[参考](https://book.st-hakky.com/data-science/open-ai-parallel-function-calling/)）
+
 
 
 # RAG(Retrieval-Augmented Generation)
