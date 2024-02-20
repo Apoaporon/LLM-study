@@ -78,6 +78,7 @@ RAGはファインチューニングとは異なり、 LLMのパラメータを�
         小さくすると、外す確率が上がるが、正確な解答が期待できる
         
         ここは入力するデータとよしなに相談
+- 精度を上げるための8ステップ([参考](https://fintan.jp/page/10301/))
 
 # ファインチューニング
 公開されているLLMモデルに対して、独自のデータを追加で学習させ、新たな知識を蓄えたモデルを作り出す技術([参考](https://qiita.com/ksonoda/items/b9fd3e709aeae79629ff))。
@@ -143,3 +144,11 @@ RAGはファインチューニングとは異なり、 LLMのパラメータを�
 - RAGとfunction callingは一時的にモデルに対して知識の追加をおこなって回答をさせる形。プロンプトエンジニアリングの上位互換的な役割？
 
 # LangChain
+ ### Agent機能
+「言語モデルに渡されたツールを用いて、モデル自体が次にどのようなアクションを取るかを決定、実行、観測し、完了するまで繰り返す機能」([参考](https://zenn.dev/umi_mori/books/prompt-engineer/viewer/langchain_agents))
+
+「ユーザーに何か要求されたら、自分の知識と与えられた Tool を使って出来る限り回答する。」 という動きになっています。([参考](https://www.ogis-ri.co.jp/otc/hiroba/technical/similar-document-search/part29.html))
+
+
+### LangGraph
+
