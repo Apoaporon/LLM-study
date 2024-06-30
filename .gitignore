@@ -3,3 +3,5 @@
 .env
 /test_movie.mp3
 /test_movie.mp4
+/img
+/txt_file
